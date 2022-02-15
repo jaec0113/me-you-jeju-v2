@@ -474,13 +474,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 2.5rem;
 }
 
+.m-8{
+  margin: 2rem;
+}
+
+.m-9{
+  margin: 2.25rem;
+}
+
+.m-4{
+  margin: 1rem;
+}
+
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-.mr-2{
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .flex{
@@ -495,6 +522,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.w-3\/5{
+  width: 60%;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -503,8 +534,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 66.666667%;
 }
 
-.w-full{
-  width: 100%;
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-2{
@@ -513,14 +544,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col{
   flex-direction: column;
-}
-
-.items-center{
-  align-items: center;
-}
-
-.justify-around{
-  justify-content: space-around;
 }
 
 .justify-evenly{
@@ -535,11 +558,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .py-4{
@@ -563,6 +581,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xs{
   font-size: 10px;
   line-height: 14px;
+}
+
+.text-xxxl{
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.text-xxl{
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.text-xl{
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text-lg{
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.text-md{
+  font-size: 14px;
+  line-height: 20px;
 }
 
 *, 
@@ -606,19 +649,4 @@ body {
   padding: 1.0em 0;
   width: 90%;
   text-align: center;
-}
-
-.hover\:border-white:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.hover\:bg-\[\#67f663\]:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(103 246 99 / var(--tw-bg-opacity));
-}
-
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
