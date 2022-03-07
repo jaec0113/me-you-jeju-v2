@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./*/**.{html,js}"],
+  content: ["./links/**/*.{html,js}", "./index.html"],
   theme: {
     fontSize: {
       xs: ['10px', '14px'],
