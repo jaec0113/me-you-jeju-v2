@@ -19,62 +19,116 @@
   <title>Episode Links | Me, You, and Jeju Podcast</title>
 </head>
 <body>
+  <!-- Hero Image -->
   <section class="m-9 flex flex-col">
     <a href="/">
       <img src="../images/logo.png" alt="Me You and Jeju logo">
     </a>
     <img src="../images/meta-image.png" alt="meta image" class="hidden">
-    <h1 class="text-xl text-center">Links to What We Talk About</h1>
+    <h1 class="text-xl text-center">Episode Links</h1>
+    <h3 class="text-md text-center">Select the episode to see the links</h3>
   </section>
+ 
+  <main class="mx-4 grid grid-cols-2 gap-x-2 gap-y-6">
 
-  <section class="m-4">
-    <h2 class="mb-2 text-lg">Pinned Links</h2>
-    <div class="grid grid-cols-3 text-sm ">
-      <div>
-        <img class="w-3/5 mx-1" src="../images/link-imgs/save-jeju-bada.jpg" alt="save jeju bada logo">
+  <!-- Pinned Links -->
+  <section>
+    <div class="flex flex-col items-center">
+      <h3>Pinned Link</h3>
+      <img class="object-contain w-1/2 pr-2 rounded-full" src="../images/link-imgs/save-jeju-bada.jpg" alt="save jeju bada logo">
+      <p class="text-sm text-center">Save Jeju Bada</p>
+    </div>
+    <dialog id="ep18-modal">
+      <div class="flex flex-col">
         <a href="https://instagram.com/savejejubada">Save Jeju Bada</a>
       </div>
-      <div>
-        <img class="w-3/5 mx-1" src="../images/link-imgs/darryl-coote.jpg" alt="darryl coote">
-        <a href="https://instagram.com/darrylcoote">Darryl Coote</a>
-      </div>
-      <div>
-        <img class="w-3/5 mx-1" src="../images/link-imgs/alexis-joy.jpg" alt="alexis joy">
-        <a href="https://instagram.com/jejujoy">Alexis Joy</a>
-      </div>
-    </div>
+      <button id="ep18-close">X</button>
+    </dialog>
   </section>
+  
 
-  <h2 class="mx-4 mb-2 text-lg">Episode Links</h2>
-  <main class="mx-4 grid grid-cols-2 gap-x-2">
+  <!-- Episodes -->
 
     <section>
-      <h3>Episode 19</h3>
-      <p class="text-sm">Jamie Lee</p>
-      <div class="flex">
-        <img class="object-contain w-1/2 pr-2" src="../images/link-imgs/jamie-lee.jpg" alt="Placeholder image">
-        <div class="flex flex-col justify-evenly w-2/3 text-xs">
+      <div id="ep20-open" class="flex flex-col items-center cursor-pointer">
+        <h3>Episode 20</h3>
+        <img class="object-contain w-1/2 pr-2 rounded-full" src="../images/link-imgs/kim-hyojeong-ep20.jpg" alt="NomadHer founder Kim Hyojeong">
+        <p class="text-sm text-center">Kim Hyojeong, NomadHer</p>
+      </div>
+      <dialog id="ep20-modal" class="glass glass-modal">
+        <div class="flex flex-col justify-center items-center">
+          <a href="https://nomadher.com" target='_blank'
+          rel='noopener noreferrer' class="my-3">NomadHer</a>
+          <a href="https://www.instagram.com/nomad_her?hl=en" target='_blank'
+          rel='noopener noreferrer' class="my-3">NomadHer Instagram</a>
+          <a href="https://apps.apple.com/ca/app/nomadher-solo-female-travel/id1473787837" target='_blank'
+          rel='noopener noreferrer' class="my-3">NomadHer on the App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.nomadher.nomadher2&hl=en&gl=US" target='_blank'
+          rel='noopener noreferrer' class="my-3">NomadHer on Google Play</a>
+          <button id="ep20-close" class="py-3 border-solid border-2 border-black rounded-md w-2/3 hover:bg-black hover:text-white">Close</button>
+        </div>
+        </dialog>
+    </section>
+
+    <section class="glass glass-card hover:bg-black/10">
+      <div class="flex flex-col items-center">
+        <h3>Episode 19</h3>
+        <img class="object-contain w-1/2 pr-2 rounded-full" src="../images/link-imgs/jamie-lee-ep19.jpg" alt="Arirang Wonders of Jeju host Jamie Lee">
+        <p class="text-sm text-center">Jamie Lee, Wonders of Jeju</p>
+      </div>
+      <dialog id="ep19-modal">
+        <div class="flex flex-col">
           <a href="https://koreatimes.co.kr/www/opinion/2022/01/721_321869.html">Wonders of Jeju</a>
         </div>
-      </div>
+        <button id="ep19-close">X</button>
+      </dialog>
     </section>
 
     <section>
-      <h3>Episode 18</h3>
-      <p class="text-sm">Robert Neff</p>
-      <div class="flex">
-        <img class="object-contain w-1/2 pr-2" src="../images/link-imgs/no-user.jpg" alt="Placeholder image">
-        <div class="flex flex-col justify-evenly w-2/3 text-xs">
+      <div class="flex flex-col items-center">
+        <h3>Episode 18</h3>
+        <img class="object-contain w-1/2 pr-2 rounded-full" src="../images/link-imgs/no-user-image.jpg" alt="Placeholder image">
+        <p class="text-sm text-center">Robert Neff, Views of Jeju From the Past</p>
+      </div>
+      <dialog id="ep18-modal">
+        <div class="flex flex-col">
           <a href="https://koreatimes.co.kr/www/opinion/2022/01/721_321869.html">Views of Jeju From the Past (1)</a>
         </div>
-      </div>
+        <button id="ep18-close">X</button>
+      </dialog>
     </section>
 
-    <section>
+    <section class="glass glass-card">
       <h3>Episode 17</h3>
       <p class="text-sm">Rachel Stine</p>
       <div class="flex">
-        <img class="object-contain w-1/2 pr-2" src="../images/link-imgs/rachel-stine.jpg" alt="Rachel Stine">
+        <img class="object-contain w-1/2 pr-2" src="../images/link-imgs/rachel-stine-ep17.jpg" alt="Rachel Stine">
+        <div class="flex flex-col justify-evenly w-2/3 text-xs">
+          <a href="https://helpinghandskorea.org">Helping Hands</a>
+          <a href="https://www.koreatimes.co.kr/www/culture/2022/01/262_321757.html?fbclid=IwAR3kKWN8tcDbb4w7qjdk5w7rsG4EWL9x39UWeOsQGsDqdboeYUFSqgM_DjA
+          ">Korea Times article</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Episode 16</h3>
+      <p class="text-sm">Jason Lisko</p>
+      <div class="flex">
+        <img class="object-contain w-1/2 pr-2" src="../images/link-imgs/jason-lisko-ep16.jpg" alt="Rachel Stine">
+        <div class="flex flex-col justify-evenly w-2/3 text-xs">
+          <a href="https://helpinghandskorea.org">Helping Hands</a>
+          <a href="https://www.koreatimes.co.kr/www/culture/2022/01/262_321757.html?fbclid=IwAR3kKWN8tcDbb4w7qjdk5w7rsG4EWL9x39UWeOsQGsDqdboeYUFSqgM_DjA
+          ">Korea Times article</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Episode 15</h3>
+      <p class="text-sm">La Yeonu, Jeju Naumi Center</p>
+      <div class="flex">
+        <img class="object-contain w-1/2 pr-2" src="../images/link-imgs/la-yeonu-ep15.jpg" alt="Rachel Stine">
         <div class="flex flex-col justify-evenly w-2/3 text-xs">
           <a href="https://helpinghandskorea.org">Helping Hands</a>
           <a href="https://www.koreatimes.co.kr/www/culture/2022/01/262_321757.html?fbclid=IwAR3kKWN8tcDbb4w7qjdk5w7rsG4EWL9x39UWeOsQGsDqdboeYUFSqgM_DjA
@@ -84,10 +138,14 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="text-sm text-center py-4">
     &copy; Me, You, and Jeju <br /> coffeeAje Designs <br /> 2021
   </footer>
 
+  <!-- GSAP Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <!-- Javascript File -->
+  <script src="/app.js"></script>
 </body>
 </html>
