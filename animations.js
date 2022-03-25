@@ -1,3 +1,9 @@
+// Main Page Animations
+gsap.from(".hero", {
+  duration: 2,
+  opacity: 0,
+})
+
 gsap.from(".sns-link", {
   duration: 1,
   scale: 0.5,

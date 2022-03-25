@@ -9,6 +9,12 @@ module.exports = {
       xl: ['24px', '28px'],
       xxl: ['28px', '32px'],
       xxxl: ['32px', '36px'],
+    },
+    screens: {
+      'tablet': '450px',
+      'large-tablet': '700px',
+      'laptop': '1024px',
+      'desktop': '1280px',
     }
   },
   plugins: [
