@@ -1,5 +1,8 @@
 module.exports = {
-  content: ["./links/**/*.{html,js}", "./index.html"],
+  purge: {
+    enabled: true,
+    content: ["./links/**/*.{html,js}", "./index.html"],
+  },
   theme: {
     fontSize: {
       xs: ['10px', '14px'],

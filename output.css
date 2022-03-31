@@ -489,11 +489,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.25rem;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -518,10 +513,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .w-3\/5{
   width: 60%;
 }
@@ -540,10 +531,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center{
   align-items: center;
-}
-
-.justify-center{
-  justify-content: center;
 }
 
 .justify-around{
@@ -572,18 +559,9 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: contain;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.pr-2{
-  padding-right: 0.5rem;
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .text-center{
@@ -608,11 +586,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-md{
   font-size: 14px;
   line-height: 20px;
-}
-
-.text-blue-100{
-  --tw-text-opacity: 1;
-  color: rgb(219 234 254 / var(--tw-text-opacity));
 }
 
 .text-blue-800{
@@ -673,6 +646,15 @@ body {
   padding: 1rem;
 }
 
+footer::before {
+  content: '';
+  position: relative;
+  display: block;
+  border-top: 2px solid black;
+  width: 50%;
+  margin: 0rem auto 2rem auto;
+}
+
 /* flip card option */
 
 /* .flip-card {
@@ -719,12 +701,6 @@ body {
   transform-style: preserve-3d;
 } */
 
-.hover\:scale-150:hover{
-  --tw-scale-x: 1.5;
-  --tw-scale-y: 1.5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:border-white:hover{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -744,33 +720,13 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:opacity-100:hover{
-  opacity: 1;
-}
-
 @media (min-width: 700px){
   .large-tablet\:flex{
     display: flex;
   }
 
-  .large-tablet\:w-1\/2{
-    width: 50%;
-  }
-
-  .large-tablet\:w-2\/3{
-    width: 66.666667%;
-  }
-
-  .large-tablet\:w-3\/4{
-    width: 75%;
-  }
-
   .large-tablet\:flex-col{
     flex-direction: column;
-  }
-
-  .large-tablet\:items-center{
-    align-items: center;
   }
 
   .large-tablet\:justify-evenly{
@@ -803,6 +759,11 @@ body {
     margin: 0.5rem;
   }
 
+  .laptop\:my-16{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .laptop\:mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -813,15 +774,6 @@ body {
     margin-bottom: 5rem;
   }
 
-  .laptop\:my-16{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  .laptop\:w-2\/3{
-    width: 66.666667%;
-  }
-
   .laptop\:w-1\/2{
     width: 50%;
   }
@@ -830,38 +782,19 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .laptop\:items-center{
-    align-items: center;
+  .laptop\:text-xxxl{
+    font-size: 32px;
+    line-height: 36px;
   }
 
   .laptop\:text-xl{
     font-size: 24px;
     line-height: 28px;
   }
-
-  .laptop\:text-xxxl{
-    font-size: 32px;
-    line-height: 36px;
-  }
 }
 
 @media (min-width: 1280px){
   .desktop\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .desktop\:text-xxl{
-    font-size: 28px;
-    line-height: 32px;
-  }
-
-  .desktop\:text-xxxl{
-    font-size: 32px;
-    line-height: 36px;
-  }
-
-  .desktop\:text-xl{
-    font-size: 24px;
-    line-height: 28px;
   }
 }

@@ -54,6 +54,15 @@ body {
   border: 1px solid rgba(255,255,255, 0.3);
   padding: 1rem;
 }
+
+footer::before {
+  content: '';
+  position: relative;
+  display: block;
+  border-top: 2px solid black;
+  width: 50%;
+  margin: 0rem auto 2rem auto;
+}
 /* flip card option */
 /* .flip-card {
   position: relative;
