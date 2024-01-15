@@ -145,6 +145,7 @@ footer {
 
 /* Episode Notes */
 .card {
+  margin-block: 3rem;
   width: 50vw;
 }
 
@@ -226,14 +227,17 @@ footer {
 }
 
 .year-container {
+  display: flex;
+  flex-direction: column;
   margin-block: 5rem;
-  width: 100%;
+  width: 100vw;
+  align-items: center;
 }
 
 .button-container {
   display: flex;
+  justify-content: center;
   width: 100%;
-  justify-content: flex-start;
 }
 
 .year-button {
@@ -315,6 +319,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 40vw;
+    margin-block: 1rem;
   }
 
   .glass {
@@ -345,13 +350,6 @@ footer {
   
   .episode-link-container > a {
     font-size: .8rem;
-  }
-
-  .year-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
   }
 
   .year-text {
@@ -418,6 +416,7 @@ footer {
   } 
 
   .card {
+    margin: 0;
     width: 90vw;
   }
 
