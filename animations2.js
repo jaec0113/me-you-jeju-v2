@@ -1,6 +1,6 @@
 // Link Page Animations
 
-gsap.from(".hero", {
+gsap.from(".hero-section", {
   duration: 2,
   opacity: 0,
 })

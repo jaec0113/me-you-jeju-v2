@@ -470,8 +470,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.m-9{
-  margin: 2.25rem;
+.m-5{
+  margin: 1.25rem;
 }
 
 .my-10{
@@ -479,26 +479,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.my-1{
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .mr-2{
   margin-right: 0.5rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
 }
 
 .flex{
@@ -513,16 +499,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-1\/2{
+  height: 50%;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
 .w-full{
   width: 100%;
 }
 
-.w-3\/5{
-  width: 60%;
-}
-
-.w-2\/5{
-  width: 40%;
+.w-3\/4{
+  width: 75%;
 }
 
 .grid-cols-2{
@@ -541,49 +531,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
 }
 
-.justify-evenly{
-  justify-content: space-evenly;
-}
-
 .gap-x-2{
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
 }
 
-.gap-y-6{
-  row-gap: 1.5rem;
-}
-
-.rounded-full{
-  border-radius: 9999px;
-}
-
-.object-contain{
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
-}
-
 .text-center{
   text-align: center;
-}
-
-.text-xxl{
-  font-size: 28px;
-  line-height: 32px;
-}
-
-.text-sm{
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .text-xl{
@@ -591,9 +545,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 28px;
 }
 
-.text-md{
-  font-size: 14px;
-  line-height: 20px;
+.text-sm{
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-xs{
+  font-size: 10px;
+  line-height: 14px;
 }
 
 .text-blue-800{
@@ -618,10 +577,8 @@ select {
   *,
   *::before,
   *::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -629,18 +586,18 @@ select {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: linear-gradient(45deg, #67F663, #99d8ff);
+  background-image: linear-gradient(45deg, #67F663, #2484C6);
   background-size: cover;
+  height: 100%;
 }
 
 .button {
   border: 2px solid black;
   border-radius: 500px;
-  background: #99d8ff;
-  font-size: 0.9rem;
-  margin: 1.5rem;
-  padding: 1.0em 0;
-  width: 70vw;
+  background: #2484C6;
+  font-size: 0.8rem;
+  margin-block: 0.5rem;
+  padding-inline: 0.5em;
   text-align: center;
 }
 
@@ -719,47 +676,9 @@ footer::before {
   background-color: rgb(103 246 99 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-black\/10:hover{
-  background-color: rgb(0 0 0 / 0.1);
-}
-
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-@media (min-width: 700px){
-  .large-tablet\:flex{
-    display: flex;
-  }
-
-  .large-tablet\:flex-col{
-    flex-direction: column;
-  }
-
-  .large-tablet\:justify-evenly{
-    justify-content: space-evenly;
-  }
-
-  .large-tablet\:text-xxxl{
-    font-size: 32px;
-    line-height: 36px;
-  }
-
-  .large-tablet\:text-xxl{
-    font-size: 28px;
-    line-height: 32px;
-  }
-
-  .large-tablet\:text-xl{
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .large-tablet\:text-lg{
-    font-size: 20px;
-    line-height: 24px;
-  }
 }
 
 @media (min-width: 1024px){
@@ -767,9 +686,9 @@ footer::before {
     margin: 0.5rem;
   }
 
-  .laptop\:my-16{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+  .laptop\:my-2{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .laptop\:mx-auto{
@@ -786,10 +705,6 @@ footer::before {
     width: 50%;
   }
 
-  .laptop\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .laptop\:text-xxxl{
     font-size: 32px;
     line-height: 36px;
@@ -798,11 +713,5 @@ footer::before {
   .laptop\:text-xl{
     font-size: 24px;
     line-height: 28px;
-  }
-}
-
-@media (min-width: 1280px){
-  .desktop\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
