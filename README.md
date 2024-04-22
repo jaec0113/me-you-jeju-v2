@@ -69,7 +69,6 @@ Icons are from Flaticon and are as follows:
 - Spotify: fi fi-brands-spotify
 - Apple: fi fi-brands-apple
 - App Store: fi fi-brands-app-store-ios
-- Google: fi fi-brands-google
 - Google Play: fi fi-brands-android
 - Amazon Podcasts: fi fi-rr-podcast (appropriate Amazon logo is not available so it was replaced with a general podcast icon)
 - Instagram: fi fi-brands-instagram
